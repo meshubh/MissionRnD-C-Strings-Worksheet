@@ -14,6 +14,8 @@ NOTES:
 char KthIndexFromEnd(char *str, int K)
 {
 	int iterator = 0,len=0;
+	if (str == "" || str == nullptr)
+		return '\0';
 	while (str[iterator] != '\0')
 	{
 		len++;
